@@ -1,0 +1,52 @@
+= ChiliProject Doodles
+
+A doodle module for ChiliProject, a doodle in this case being a collection of
+simple yes-no questions.
+
+== Requirements
+
+This plugin aims to be compatible with
+
+* ChiliProject 3 and greater
+
+This plugin should work well with ChiliProject 2 too, this is as yet untested
+though.
+
+== Installation
+
+Please follow the default {plugin installation instructions for
+ChiliProject}[https://www.chiliproject.org/projects/chiliproject/wiki/Plugin_Install].
+
+For the impatient: go to your ChiliProject directory, run the following
+commands and restart ChiliProject:
+
+    git clone https://github.com/thegcat/chiliproject_doodles.git
+    bundle exec rake db:migrate_plugins RAILS_ENV=production
+
+Remember to go to the permissions page and give permissions to create and
+answer doodles as needed!
+
+== Deinstallation
+
+TODO
+
+== Translations
+
+* `en`, `de` by myself
+* `ru` by Eugeniy Belyaev
+* `ko` by 박우진
+* `fr` by {JB Barth}[https://github.com/jbbarth]
+* `es`, `ca` by Jan Wedekind (http://iris.cat/)
+* `zh` by Peng Wang
+* `it` by {Maurizio Di Florio}[http://www.mauriziodiflorio.com]
+* `sl` by Erol
+
+== Help
+
+You can get help for this plugin in the {GitHub project}[https://github.com/thegcat/chiliproject_doodles/issues].
+
+== License
+
+(c) 2012 - Felix Schäfer
+
+This plugin is licensed under the MIT license. See COPYRIGHT.txt for details.
