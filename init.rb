@@ -19,7 +19,7 @@ Redmine::Plugin.register :chiliproject_doodles do
   
   menu :project_menu, :doodles, {:controller => 'doodles', :action => 'index'}, :caption => :label_doodle_plural, :param => :project_id
   
-  activity_provider :doodles, :default => false, :class_name => ['Doodle', 'DoodleAnswersEdits']
+  activity_provider :doodles, :default => false, :class_name => ['Doodle']
 end
 
 Dispatcher.to_prepare do
