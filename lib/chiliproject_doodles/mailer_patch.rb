@@ -1,22 +1,5 @@
 module Plugin
-  module Doodles
-    module Project
-      module ClassMethods
-      end
-      
-      module InstanceMethods
-      end
-      
-      def self.included(receiver)
-        receiver.extend         ClassMethods
-        receiver.send :include, InstanceMethods
-        receiver.class_eval do
-          unloadable
-          has_many :doodles, :include => [:author, :responses, :comments]
-        end
-      end
-    end
-    
+  module Doodles    
     module Mailer
       module ClassMethods
       end
@@ -67,3 +50,5 @@ module Plugin
     end
   end
 end
+
+Mailer.send(:include, ::Plugin::Doodles::Mailer)
